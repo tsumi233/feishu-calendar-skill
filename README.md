@@ -82,9 +82,8 @@ git clone https://github.com/tsumi233/feishu-calendar-skill.git ~/.openclaw/skil
 
 如果只开了租户权限，没有开用户权限，那么它仍然可以回退到机器人日历，但不能直接写入用户自己的主日历。
 
-## 中文截图版说明
+## 配置说明
 
-下面这三张是中文示意截图，适合直接发给同事或朋友照着配。
 
 ### 1. 在飞书开放平台-安全设置中添加 Redirect URL
 
@@ -94,7 +93,7 @@ git clone https://github.com/tsumi233/feishu-calendar-skill.git ~/.openclaw/skil
 - `127.0.0.1` 不要换成 `localhost`
 - 保存后再进行用户授权
 
-### 2. 开通用户侧 calendar 权限
+### 2. 在飞书开放平台-权限中开通用户侧 calendar 权限
 
 建议至少开这几项：
 
