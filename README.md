@@ -23,11 +23,41 @@ feishu-calendar-skill/
 
 ## 安装
 
-把仓库克隆到本机 `OpenClaw` skills 目录：
+### 一键安装
+
+直接执行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/tsumi233/feishu-calendar-skill/main/install.sh | bash
+```
+
+### 固定版本安装
+
+如果你想安装某个 tag 版本：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/tsumi233/feishu-calendar-skill/main/install.sh | bash -s -- --ref v0.1.0
+```
+
+### 本地安装
+
+如果你已经把仓库克隆到了本地，也可以直接运行：
+
+```bash
+./install.sh
+```
+
+或者：
 
 ```bash
 git clone https://github.com/tsumi233/feishu-calendar-skill.git ~/.openclaw/skills/feishu-calendar
 ```
+
+安装脚本默认会：
+
+- 安装到 `~/.openclaw/skills/feishu-calendar`
+- 自动备份旧版本 skill
+- 只复制 skill 运行需要的文件，不复制 `.git`、README、截图资源或本地用户授权状态
 
 ## 前置条件
 
