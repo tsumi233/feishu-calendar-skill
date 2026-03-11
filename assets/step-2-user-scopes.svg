@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" fill="none">
+  <rect width="1200" height="860" fill="#F6F8FC"/>
+  <rect x="40" y="40" width="1120" height="780" rx="24" fill="#FFFFFF" stroke="#D8E0EE"/>
+  <rect x="40" y="40" width="1120" height="64" rx="24" fill="#EEFDF6"/>
+  <circle cx="84" cy="72" r="10" fill="#FF6B6B"/>
+  <circle cx="114" cy="72" r="10" fill="#FFD166"/>
+  <circle cx="144" cy="72" r="10" fill="#4DCCBD"/>
+  <text x="180" y="80" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1F2937">飞书开放平台 / 权限管理 / 用户权限</text>
+
+  <text x="92" y="156" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#111827">步骤 2：勾选用户授权的日历权限</text>
+  <text x="92" y="202" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#4B5563">这些权限用于让机器人以“当前用户身份”直接写入用户自己的主日历。</text>
+
+  <rect x="88" y="242" width="1024" height="482" rx="20" fill="#F8FAFF" stroke="#D8E0EE"/>
+
+  <rect x="124" y="284" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="301" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 312.5L162 320L176 305" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="320" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">offline_access</text>
+
+  <rect x="124" y="356" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="373" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 384.5L162 392L176 377" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="392" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">calendar:calendar:read</text>
+
+  <rect x="124" y="428" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="445" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 456.5L162 464L176 449" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="464" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">calendar:calendar</text>
+
+  <rect x="124" y="500" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="517" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 528.5L162 536L176 521" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="536" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">calendar:calendar.event:create</text>
+
+  <rect x="124" y="572" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="589" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 600.5L162 608L176 593" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="608" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">calendar:calendar.event:update</text>
+
+  <rect x="124" y="644" width="952" height="56" rx="14" fill="#E8FFF2"/>
+  <rect x="148" y="661" width="22" height="22" rx="6" fill="#10B981"/>
+  <path d="M154 672.5L162 680L176 665" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="198" y="680" font-size="24" font-family="Menlo, Monaco, monospace" fill="#065F46">calendar:calendar.event:delete</text>
+
+  <rect x="88" y="748" width="1024" height="40" rx="14" fill="#FFF4E5"/>
+  <text x="116" y="774" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#92400E">如果你刚刚补了权限，记得重新执行 auth-start。旧 token 不会自动拥有新 scope。</text>
+</svg>

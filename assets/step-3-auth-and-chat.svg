@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" fill="none">
+  <rect width="1200" height="820" fill="#F6F8FC"/>
+  <text x="70" y="84" font-size="34" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#111827">步骤 3：本机授权后，在飞书里直接创建日程</text>
+  <text x="70" y="126" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#4B5563">左边是本机终端授权，右边是飞书会话里的实际使用方式。</text>
+
+  <rect x="56" y="170" width="500" height="580" rx="24" fill="#111827"/>
+  <circle cx="92" cy="206" r="10" fill="#FF6B6B"/>
+  <circle cx="122" cy="206" r="10" fill="#FFD166"/>
+  <circle cx="152" cy="206" r="10" fill="#4DCCBD"/>
+  <text x="188" y="214" font-size="24" font-family="Menlo, Monaco, monospace" fill="#E5E7EB">Terminal</text>
+
+  <text x="86" y="276" font-size="20" font-family="Menlo, Monaco, monospace" fill="#93C5FD">$ node ~/.openclaw/skills/feishu-calendar/</text>
+  <text x="86" y="308" font-size="20" font-family="Menlo, Monaco, monospace" fill="#93C5FD">  scripts/feishu-calendar.mjs auth-start \</text>
+  <text x="86" y="340" font-size="20" font-family="Menlo, Monaco, monospace" fill="#93C5FD">  --requester-open-id 'ou_xxx' \</text>
+  <text x="86" y="372" font-size="20" font-family="Menlo, Monaco, monospace" fill="#93C5FD">  --open-browser true</text>
+
+  <rect x="82" y="424" width="448" height="220" rx="20" fill="#1F2937" stroke="#374151"/>
+  <text x="110" y="472" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#F9FAFB">授权完成后，你会看到类似结果：</text>
+  <text x="110" y="518" font-size="18" font-family="Menlo, Monaco, monospace" fill="#A7F3D0">"ok": true</text>
+  <text x="110" y="550" font-size="18" font-family="Menlo, Monaco, monospace" fill="#A7F3D0">"authorizedOpenId": "ou_xxx"</text>
+  <text x="110" y="582" font-size="18" font-family="Menlo, Monaco, monospace" fill="#A7F3D0">"requesterAuthorizedPrimary": {</text>
+  <text x="130" y="614" font-size="18" font-family="Menlo, Monaco, monospace" fill="#A7F3D0">"role": "owner"</text>
+  <text x="110" y="646" font-size="18" font-family="Menlo, Monaco, monospace" fill="#A7F3D0">}</text>
+
+  <rect x="614" y="170" width="530" height="580" rx="24" fill="#FFFFFF" stroke="#D8E0EE"/>
+  <rect x="614" y="170" width="530" height="74" rx="24" fill="#EAF0FF"/>
+  <text x="650" y="216" font-size="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1F2937">飞书私聊示意</text>
+
+  <rect x="648" y="286" width="348" height="88" rx="22" fill="#E5F0FF"/>
+  <text x="680" y="334" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1F2937">帮我创建明天下午 3 点到 4 点</text>
+  <text x="680" y="364" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#1F2937">的飞书日程，标题叫项目评审</text>
+
+  <rect x="734" y="430" width="374" height="210" rx="22" fill="#0F766E"/>
+  <text x="764" y="480" font-size="24" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-weight="700" fill="#FFFFFF">机器人回复</text>
+  <text x="764" y="526" font-size="22" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#ECFDF5">已创建到你的个人主日历</text>
+  <text x="764" y="562" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#D1FAE5">标题：项目评审</text>
+  <text x="764" y="594" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#D1FAE5">时间：明天 15:00 - 16:00</text>
+  <text x="764" y="626" font-size="20" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#D1FAE5">策略：requester-user-token</text>
+
+  <rect x="648" y="680" width="460" height="36" rx="12" fill="#FFF4E5"/>
+  <text x="670" y="704" font-size="18" font-family="PingFang SC, Microsoft YaHei, sans-serif" fill="#92400E">如果用户授权失效，脚本会自动回退到机器人日历并明确提示。</text>
+</svg>

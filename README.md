@@ -52,6 +52,45 @@ git clone https://github.com/tsumi233/feishu-calendar-skill.git ~/.openclaw/skil
 
 如果只开了租户权限，没有开用户权限，那么它仍然可以回退到机器人日历，但不能直接写入用户自己的主日历。
 
+## 中文截图版说明
+
+下面这三张是中文示意截图，适合直接发给同事或朋友照着配。
+
+### 1. 在飞书开放平台添加 Redirect URI
+
+![步骤 1：添加 Redirect URI](./assets/step-1-redirect-uri.svg)
+
+要点：
+
+- 地址必须完整一致：`http://127.0.0.1:18790/feishu-calendar/callback`
+- `127.0.0.1` 不要换成 `localhost`
+- 保存后再进行用户授权
+
+### 2. 开通用户侧 calendar 权限
+
+![步骤 2：开通用户日历权限](./assets/step-2-user-scopes.svg)
+
+建议至少开这几项：
+
+- `offline_access`
+- `calendar:calendar:read`
+- `calendar:calendar`
+- `calendar:calendar.event:create`
+- `calendar:calendar.event:update`
+- `calendar:calendar.event:delete`
+
+如果刚刚补了权限，记得重新执行一次 `auth-start`，否则旧 token 还是不带这些 scope。
+
+### 3. 在本机授权，然后在飞书里直接创建日程
+
+![步骤 3：授权并在飞书里创建日程](./assets/step-3-auth-and-chat.svg)
+
+推荐流程：
+
+1. 先在运行 `OpenClaw` 的机器上执行 `auth-start`
+2. 在浏览器中完成飞书授权
+3. 再去飞书私聊里直接发自然语言建日程指令
+
 ## 一次性用户授权
 
 首次要让某个飞书用户的请求直接写入其个人主日历，需要在运行 `OpenClaw` 的这台 Mac 上执行：
