@@ -71,7 +71,7 @@ download_repo_archive() {
     "https://github.com/${repo_slug}/archive/refs/heads/${ref}.tar.gz" \
     "https://github.com/${repo_slug}/archive/${ref}.tar.gz"
   do
-    if curl -fsSL "$url" -o "$archive_path"; then
+    if curl -fsSL "$url" -o "$archive_path" 2>/dev/null; then
       tar -xzf "$archive_path" -C "$temp_dir"
       find "$temp_dir" -mindepth 1 -maxdepth 1 -type d | head -n 1
       return 0
@@ -169,8 +169,12 @@ trap cleanup EXIT
 if [[ -n "$LOCAL_SOURCE" ]]; then
   SOURCE_DIR="$LOCAL_SOURCE"
 else
-  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd 2>/dev/null || true)"
-  if [[ -n "${SCRIPT_DIR:-}" && -f "$SCRIPT_DIR/SKILL.md" && -f "$SCRIPT_DIR/scripts/feishu-calendar.mjs" ]]; then
+  SCRIPT_PATH="${BASH_SOURCE[0]:-}"
+  SCRIPT_DIR=""
+  if [[ -n "$SCRIPT_PATH" ]]; then
+    SCRIPT_DIR="$(cd "$(dirname "$SCRIPT_PATH")" && pwd 2>/dev/null || true)"
+  fi
+  if [[ -n "$SCRIPT_DIR" && -f "$SCRIPT_DIR/SKILL.md" && -f "$SCRIPT_DIR/scripts/feishu-calendar.mjs" ]]; then
     SOURCE_DIR="$SCRIPT_DIR"
   else
     log "Downloading ${REPO_SLUG} (${REF})..."
