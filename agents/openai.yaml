@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feishu Calendar"
+  short_description: "Create and manage Feishu calendar events."
+  default_prompt: "Use $feishu-calendar to create or manage a Feishu calendar event for me."
