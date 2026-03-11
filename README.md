@@ -36,7 +36,7 @@ curl -fsSL https://raw.githubusercontent.com/tsumi233/feishu-calendar-skill/main
 如果你想安装某个 tag 版本：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tsumi233/feishu-calendar-skill/main/install.sh | bash -s -- --ref v0.1.0
+curl -fsSL https://raw.githubusercontent.com/tsumi233/feishu-calendar-skill/main/install.sh | bash -s -- --ref v0.2.0
 ```
 
 ### 本地安装
